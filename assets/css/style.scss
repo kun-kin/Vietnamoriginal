@@ -223,6 +223,10 @@ p {
         margin-bottom: 4px;
     }
 
+    .required {
+        color: #EF4444;
+    }
+
     .agree-checkbox {
         font-weight: 500;
         cursor: pointer;
@@ -350,6 +354,25 @@ p {
 textarea.form-control {
     height: auto;
 }
+
+.breadcrumb {
+    padding: 10px;
+    background: transparent;
+    margin-top: 30px;
+    gap: 4px;
+    font-weight: 500;
+
+    a {
+        display: inline-block;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}
+
+
+
 
 // Importing partials
 @import 'header';

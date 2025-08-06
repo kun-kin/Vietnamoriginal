@@ -62,15 +62,44 @@
                                     </a>
                                 </li>
                                 <li class="header-top-right-item">
-                                    <div class="language">
-                                        <div class="language-select">
-                                            <select name="language" id="language">
-                                                <option value="en">English</option>
-                                                <option value="fr">Français</option>
-                                                <option value="vi">Tiếng Việt</option>
-                                            </select>
-                                        </div>
+                                    <div class="language-selector">
+                                        <button class="selected-language" id="selectedLanguage">
+                                            <img src="https://flagcdn.com/fr.svg" alt="France" class="flag-icon">
+                                            <span>France</span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </button>
+                                        <ul class="language-dropdown" id="languageDropdown">
+                                            <li data-lang="fr" class="active">
+                                                <img src="https://flagcdn.com/fr.svg" alt="France" class="flag-icon">
+                                                France
+                                            </li>
+                                            <li data-lang="en">
+                                                <img src="https://flagcdn.com/gb.svg" alt="UK" class="flag-icon">
+                                                Angleterre
+                                            </li>
+                                            <li data-lang="de">
+                                                <img src="https://flagcdn.com/de.svg" alt="Germany" class="flag-icon">
+                                                Allemagne
+                                            </li>
+                                            <li data-lang="es">
+                                                <img src="https://flagcdn.com/es.svg" alt="Spain" class="flag-icon">
+                                                Espagne
+                                            </li>
+                                            <li data-lang="vn">
+                                                <img src="https://flagcdn.com/vn.svg" alt="Vietnam" class="flag-icon">
+                                                Vietnam
+                                            </li>
+                                            <li data-lang="pt">
+                                                <img src="https://flagcdn.com/pt.svg" alt="Portugal" class="flag-icon">
+                                                Portugal
+                                            </li>
+                                            <li data-lang="it">
+                                                <img src="https://flagcdn.com/it.svg" alt="Italy" class="flag-icon">
+                                                Italie
+                                            </li>
+                                        </ul>
                                     </div>
+
                                 </li>
                             </ul>
                         </div>
@@ -87,10 +116,11 @@
                             <nav class="navbar">
                                 <ul class="menu">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                        <a class="nav-link active" aria-current="page" href="./index.html"><i
+                                                class="fa-solid fa-house"></i></a>
                                     </li>
                                     <li class="nav-item largemenu">
-                                        <a class="nav-link" href="#">Destination</a>
+                                        <a class="nav-link" href="javascript:;">Destination</a>
                                         <div class="submenu destination-submenu">
                                             <div class="container">
                                                 <div class="row justify-content-center">
@@ -109,27 +139,32 @@
                                                                     </h4>
                                                                     <ul class="country-item-list">
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Hanoi</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Ho Chi Minh</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Hội An</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Phú Quốc</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Huế</span>
                                                                             </a>
                                                                         </li>
@@ -143,27 +178,32 @@
                                                                     </h4>
                                                                     <ul class="country-item-list">
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Vientiane</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Luang Prabang</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Vang Vieng</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Champasak</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Plain of Jars</span>
                                                                             </a>
                                                                         </li>
@@ -176,22 +216,26 @@
                                                                     </h4>
                                                                     <ul class="country-item-list">
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Siem Reap</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Phnom Penh</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Sihanoukville</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Kampot</span>
                                                                             </a>
                                                                         </li>
@@ -204,22 +248,26 @@
                                                                     </h4>
                                                                     <ul class="country-item-list">
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Yangon</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Mandalay</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Bagan</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Inle Lake</span>
                                                                             </a>
                                                                         </li>
@@ -232,22 +280,26 @@
                                                                     </h4>
                                                                     <ul class="country-item-list">
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Bangkok</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Chiang Mai</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Phuket</span>
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="" class="country-item-link">
+                                                                            <a href="./destination-location.html"
+                                                                                class="country-item-link">
                                                                                 <span>Krabi</span>
                                                                             </a>
                                                                         </li>
@@ -364,7 +416,7 @@
                             <a href="./index.html">Accueil</a>
                         </li>
                         <li class="hasChildren">
-                            <a href="./destinations.html">
+                            <a href="javascript:;">
                                 Destinations
                                 <span class="carret">
                                     <i class="fa-regular fa-circle-chevron-down"></i>
@@ -459,11 +511,43 @@
                                 <span>Agent Hub</span> </a>
                         </li>
                         <li>
-                            <select name="language" id="language" class="language-select">
-                                <option value="en">English</option>
-                                <option value="fr">Français</option>
-                                <option value="vi">Tiếng Việt</option>
-                            </select>
+                            <div class="language-selector">
+                                <button class="selected-language" id="selectedLanguage">
+                                    <img src="https://flagcdn.com/fr.svg" alt="France" class="flag-icon">
+                                    <span>France</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                                <ul class="language-dropdown" id="languageDropdown">
+                                    <li data-lang="fr" class="active">
+                                        <img src="https://flagcdn.com/fr.svg" alt="France" class="flag-icon">
+                                        France
+                                    </li>
+                                    <li data-lang="en">
+                                        <img src="https://flagcdn.com/gb.svg" alt="UK" class="flag-icon">
+                                        Angleterre
+                                    </li>
+                                    <li data-lang="de">
+                                        <img src="https://flagcdn.com/de.svg" alt="Germany" class="flag-icon">
+                                        Allemagne
+                                    </li>
+                                    <li data-lang="es">
+                                        <img src="https://flagcdn.com/es.svg" alt="Spain" class="flag-icon">
+                                        Espagne
+                                    </li>
+                                    <li data-lang="vn">
+                                        <img src="https://flagcdn.com/vn.svg" alt="Vietnam" class="flag-icon">
+                                        Vietnam
+                                    </li>
+                                    <li data-lang="pt">
+                                        <img src="https://flagcdn.com/pt.svg" alt="Portugal" class="flag-icon">
+                                        Portugal
+                                    </li>
+                                    <li data-lang="it">
+                                        <img src="https://flagcdn.com/it.svg" alt="Italy" class="flag-icon">
+                                        Italie
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -480,7 +564,30 @@
                     </div>
                 </div>
                 <div class="banner-content">
-                    <h1 class="title"></h1>
+                    <h1 class="title">Circuit Vietnam Cambodge 2 semaines</h1>
+                    <div class="desc">Hanoi - Ninh Binh - baie d'Halong - Hue - Da Nang - Hoi An - Saigon - Phnom Penh -
+                        Siem Reap</div>
+                </div>
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li class="item">
+                                <a href="">Accueil</a>
+                            </li>
+                            <li class="item-separator">
+                                >
+                            </li>
+                            <li class="item">
+                                <a href=""> Destinations</a>
+                            </li>
+                            <li class="item-separator">
+                                >
+                            </li>
+                            <li class="item">
+                                <a href=""> Centre du Vietnam</a>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </section>
 
@@ -497,25 +604,29 @@
                                 <div class="col-xl-9 box-type">
                                     <div class="row">
                                         <div class="col-xl-4 reservation-item">
-                                            <div class="form-group">
-                                                <div class="input-group">
+                                            <div class="form-group filter-dropdown" id="destinationDropdown">
+                                                <div class="input-group filter-header" onclick="toggleDropdown()">
                                                     <div class="icons">
                                                         <i class="fa-solid fa-location-dot"></i>
                                                     </div>
                                                     <div class="value-box">
                                                         <div class="content">
                                                             <label for="">Destination</label>
-                                                            <select class="form-control" id="">
-                                                                <option value="">Où allez-vous ?</option>
-                                                                <option value="hanoi">Hanoi</option>
-                                                                <option value="ho-chi-minh">Ho Chi Minh</option>
-                                                                <option value="hoi-an">Hội An</option>
-                                                                <option value="phu-quoc">Phú Quốc</option>
-                                                            </select>
+                                                            <div class="form-control">Où allez-vous ?</div>
                                                         </div>
                                                         <div class="arrow">
                                                             <i class="fa-solid fa-chevron-down"></i>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-body">
+                                                    <div class="checkbox-list" id="checkboxList">
+                                                        <label><input type="checkbox" value="Vietnam"> Vietnam</label>
+                                                        <label><input type="checkbox" value="Cambodge"> Cambodge</label>
+                                                        <label><input type="checkbox" value="Laos"> Laos</label>
+                                                        <label><input type="checkbox" value="Thailande">
+                                                            Thailande</label>
+                                                        <label><input type="checkbox" value="Birmanie"> Birmanie</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -586,10 +697,6 @@
             <section class="tours-detail">
                 <div class="container">
                     <div class="tours-detail-pagehead">
-                        <h1 class="tours-detail-pagehead-title">Circuit Vietnam Cambodge 2 semaines</h1>
-                        <div class="tours-detail-pagehead-intinerary">
-                            Hanoi - Ninh Binh - baie d'Halong - Hue - Da Nang - Hoi An - Saigon - Phnom Penh - Siem Reap
-                        </div>
                         <div class="tours-detail-pagehead-meta">
                             <div class="box-item">
                                 <div class="icon">
@@ -639,6 +746,55 @@
                             Circuit Vietnam Cambodge 2 semaines est un programme dense, authentique et complet qui se
                             prete volontier à une
                             personnalisation selon vos souhaits.
+                        </div>
+                    </div>
+                    <div class="tours-detail-gallery">
+                        <div class="tours-detail-gallery-list page-gallery-list">
+                            <div class="item">
+                                <a href="./assets/images/banner5.jpg" data-fancybox="tourgl">
+                                    <img src="./assets/images/banner5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/images/banner5.jpg" data-fancybox="tourgl">
+                                    <img src="./assets/images/banner5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/images/banner5.jpg" data-fancybox="tourgl">
+                                    <img src="./assets/images/banner5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/images/banner5.jpg" data-fancybox="tourgl">
+                                    <img src="./assets/images/banner5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/images/banner5.jpg" data-fancybox="tourgl">
+                                    <img src="./assets/images/banner5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/images/banner5.jpg" data-fancybox="tourgl">
+                                    <img src="./assets/images/banner5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/images/banner5.jpg" data-fancybox="tourgl">
+                                    <img src="./assets/images/banner5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/images/banner5.jpg" data-fancybox="tourgl">
+                                    <img src="./assets/images/banner5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/images/banner5.jpg" data-fancybox="tourgl">
+                                    <img src="./assets/images/banner5.jpg" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="tours-detail-content">
@@ -735,6 +891,451 @@
                                                         travers le marché où sont échangés de nombreux produits locaux.
                                                         La visite se termine vers 11h. Rout pour Chau Doc, ville
                                                         frontalière avec le Cambodge. Dîner libre et nuit à l'hôtel.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gr-bookvoyage">
+                                        <div class="inner-box">
+                                            <h3 class="title">Ce circuit vous plaît ?</h3>
+                                            <div class="desc">Réservez-le tel quel ou personnalisez-le à votre goût
+                                            </div>
+                                            <div class="gr-btn">
+                                                <!-- <a href="javascript:;" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#bookvoyage">Réservez ce circuit</a>
+                                                <a href="" class="btn btn-normal">Modifiez ce circuit</a> -->
+                                                <button id="btnReserve" class="btn btn-primary">RÉSERVEZ CE
+                                                    CIRCUIT</button>
+                                                <button id="btnModify" class="btn btn-normal">MODIFIEZ CE
+                                                    CIRCUIT</button>
+                                                <div id="popupReserve" class="popup-overlay">
+                                                    <div class="popup-content">
+                                                        <span class="close">&times;</span>
+                                                        <div class="modal-head">
+                                                            <h2 class="modal-title">RÉSERVER CE VOYAGE</h2>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="">
+                                                                <div class="form-head">
+                                                                    <p class="form-head-text">Réservez ce voyage :</p>
+                                                                    <p>Pour réserver ce voyage, merci de remplir ce
+                                                                        formulaire.<br>Notre conseiller, spécialiste de
+                                                                        la
+                                                                        destination, prendra
+                                                                        contact avec vous afin de communiquer les
+                                                                        démarches
+                                                                        à suivre pour la confirmation de votre voyage et
+                                                                        pour la
+                                                                        transmission des conditions de vente.</p>
+                                                                    <p class="form-head-notetext">Réservez ce voyage *
+                                                                    </p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label for="">Nom et prénom <span
+                                                                                    class="required">*</span></label>
+
+                                                                            <input type="text" class="form-control"
+                                                                                id="fullname" name="fullname"
+                                                                                required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+
+                                                                            <label for="">Nationalité <span
+                                                                                    class="required">*</span></label>
+
+                                                                            <input type="text" class="form-control"
+                                                                                id="fullname" name="fullname"
+                                                                                required="">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+
+                                                                            <label for="">Email <span
+                                                                                    class="required">*</span></label>
+
+                                                                            <input type="text" class="form-control"
+                                                                                id="fullname" name="fullname"
+                                                                                required="">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+
+                                                                            <label for="">Reconfirmez votre
+                                                                                email <span
+                                                                                    class="required">*</span></label>
+
+                                                                            <input type="text" class="form-control"
+                                                                                id="fullname" name="fullname"
+                                                                                required="">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+
+                                                                            <label for="">Téléphone <span
+                                                                                    class="required">*</span></label>
+
+                                                                            <input type="text" class="form-control"
+                                                                                id="fullname" name="fullname"
+                                                                                required="">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Date du depart <span
+                                                                                    class="required">*</span></label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="form-control hasDatepicker flatpickr-input"
+                                                                                readonly="readonly">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Horaires de vols <span
+                                                                                    class="required">*</span></label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Date du départ <span
+                                                                                    class="required">*</span></label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="hasDatepicker form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Horaires de vols <span
+                                                                                    class="required">*</span></label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Paticipants</label>
+                                                                            <div class="input-group">
+                                                                                <input type="text" name="" id=""
+                                                                                    class="form-control">
+                                                                                <span class="tag">Adultes</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Âges</label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Paticipants</label>
+                                                                            <div class="input-group">
+                                                                                <input type="text" name="" id=""
+                                                                                    class="form-control">
+                                                                                <span class="tag">Enfants</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Âges</label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label for="">Types d’hébergement</label>
+                                                                            <select class="form-control" id="star"
+                                                                                name="star">
+                                                                                <optgroup label=" Hôtel ">
+                                                                                    <option value="1 star"> 1 star
+                                                                                    </option>
+                                                                                    <option value="2 star"> 2 star
+                                                                                    </option>
+                                                                                    <option value="3 star"> 3 star
+                                                                                    </option>
+                                                                                    <option value="4 star"> 4 star
+                                                                                    </option>
+                                                                                    <option value="5 star"> 5 star
+                                                                                    </option>
+                                                                                </optgroup>
+                                                                                <optgroup label=" Chez l’habitant ">
+                                                                                    <option value="Chez l’habitant">
+                                                                                        Chez l’habitant </option>
+                                                                                </optgroup>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label for="">Demandes spéciales</label>
+                                                                            <textarea name="" id="" rows="5"
+                                                                                class="form-control"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-btn text-center">
+                                                                            <button type="submit"
+                                                                                class="btn btn-primary">
+                                                                                Valider <i
+                                                                                    class="fa-solid fa-paper-plane"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Popup tùy chỉnh tour -->
+                                                <div id="popupModify" class="popup-overlay">
+                                                    <div class="popup-content">
+                                                        <span class="close">&times;</span>
+                                                        <div class="modal-head">
+                                                            <h2 class="modal-title">Personnaliser ce voyage</h2>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="">
+                                                                <div class="form-head">
+                                                                    <p class="form-head-text">Personnalisez votre voyage
+                                                                        :</p>
+                                                                    <p>
+                                                                    <p>Vous cherchez le dépaysement, l’aventure,
+                                                                        l’authenticité, les rencontres humaines et les
+                                                                        découvertes de la vie
+                                                                        quotidienne?<br>
+                                                                        Vous rêvez d’un voyage sur mesure à votre
+                                                                        rythme, conforme à vos souhaits et respectant
+                                                                        votre budget? <br>
+                                                                        Remplissez svp ce formulaire, notre équipe
+                                                                        francophone expérimentée, compétente et
+                                                                        professionnelle sera toujours à
+                                                                        votre disposition et à votre écoute, soigneuse
+                                                                        d’accompagner votre voyage de rêve vers sa
+                                                                        réalisation finale.</p>
+                                                                    </p>
+                                                                    <p class="form-head-notetext">Champs obligatoires *
+                                                                    </p>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label for="">Nom et prénom <span
+                                                                                    class="required">*</span></label>
+
+                                                                            <input type="text" class="form-control"
+                                                                                id="fullname" name="fullname"
+                                                                                required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+
+                                                                            <label for="">Nationalité <span
+                                                                                    class="required">*</span></label>
+
+                                                                            <input type="text" class="form-control"
+                                                                                id="fullname" name="fullname"
+                                                                                required="">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+
+                                                                            <label for="">Email <span
+                                                                                    class="required">*</span></label>
+
+                                                                            <input type="text" class="form-control"
+                                                                                id="fullname" name="fullname"
+                                                                                required="">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+
+                                                                            <label for="">Reconfirmez votre
+                                                                                email <span
+                                                                                    class="required">*</span></label>
+
+                                                                            <input type="text" class="form-control"
+                                                                                id="fullname" name="fullname"
+                                                                                required="">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+
+                                                                            <label for="">Téléphone <span
+                                                                                    class="required">*</span></label>
+
+                                                                            <input type="text" class="form-control"
+                                                                                id="fullname" name="fullname"
+                                                                                required="">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label for="">Pays, adresse de domicile
+                                                                                <span class="required">*</span></label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="fullname" name="fullname"
+                                                                                required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Date d’arrivée <span
+                                                                                    class="required">*</span></label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="form-control hasDatepicker flatpickr-input"
+                                                                                readonly="readonly">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Horaires de vols <span
+                                                                                    class="required">*</span></label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Date du départ <span
+                                                                                    class="required">*</span></label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="hasDatepicker form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Horaires de vols <span
+                                                                                    class="required">*</span></label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Paticipants</label>
+                                                                            <div class="input-group">
+                                                                                <input type="text" name="" id=""
+                                                                                    class="form-control">
+                                                                                <span class="tag">Adultes</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Âges</label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Paticipants</label>
+                                                                            <div class="input-group">
+                                                                                <input type="text" name="" id=""
+                                                                                    class="form-control">
+                                                                                <span class="tag">Enfants</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="">Âges</label>
+                                                                            <input type="text" name="" id=""
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label for="">Types d’hébergement</label>
+                                                                            <select class="form-control" id="star"
+                                                                                name="star">
+                                                                                <optgroup label=" Hôtel ">
+                                                                                    <option value="1 star"> 1 star
+                                                                                    </option>
+                                                                                    <option value="2 star"> 2 star
+                                                                                    </option>
+                                                                                    <option value="3 star"> 3 star
+                                                                                    </option>
+                                                                                    <option value="4 star"> 4 star
+                                                                                    </option>
+                                                                                    <option value="5 star"> 5 star
+                                                                                    </option>
+                                                                                </optgroup>
+                                                                                <optgroup label=" Chez l’habitant ">
+                                                                                    <option value="Chez l’habitant">
+                                                                                        Chez l’habitant </option>
+                                                                                </optgroup>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label for="">Décrivez- nous précisément
+                                                                                votre projet de voyage : centre
+                                                                                d’intérêts, d’itinéraires, sites,
+                                                                                activités, budget…</label>
+                                                                            <textarea name="" id="" rows="5"
+                                                                                class="form-control"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label for="">Facons de créer vous-même
+                                                                                votre voyage.</label>
+                                                                            <div class="radio-group">
+                                                                                <label>
+                                                                                    <input type="radio"
+                                                                                        name="customvoyage" checked="">
+                                                                                    Personnalisez un voyage parmi notre
+                                                                                    sélection.
+                                                                                </label>
+                                                                                <label>
+                                                                                    <input type="radio"
+                                                                                        name="customvoyage">
+                                                                                    Construisez vous-même votre voyage
+                                                                                    de A à Z.
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-btn text-center">
+                                                                            <button type="submit"
+                                                                                class="btn btn-primary">
+                                                                                Valider <i
+                                                                                    class="fa-solid fa-paper-plane"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1002,278 +1603,197 @@
                 </div>
             </section>
 
-            <section class="tours-related">
+            <section class="others-tour">
                 <div class="container">
-                    <div class="heading-title typerow">
-                        <h2 class="sectitle">
-                            Voyages coup de coeur de nos clients à personnaliser
-                        </h2>
-                        <div class="subtitle">
-                            <p>Besoin d’inspiration ? Découvrez quelques-uns de meilleurs&nbsp;circuits au Vietnam très
-                                appréciés de notre clientèle. Un bon
-                                indicateur pour vous aider à choisir le voyage au Vietnam, au Laos, au Cambodge, en
-                                Birmanie et&nbsp;en Thailande&nbsp;qui vous
-                                convient, que vous ayez prévu de partir seul, en amoureux, en famille ou entre amis.</p>
+                    <div class="others-tour-inner">
+                        <div class="heading-title">
+                            <h2 class="sectitle">Vous aimerez aussi</h2>
+                            <div class="subtitle">
+                                Nous sommes fiers et honorés de partager avec vous que la presse spécialisée nous
+                                recommande, pour la plupart depuis
+                                plusieurs années
+                                consécutives.
+                            </div>
+                        </div>
+                        <div class="others-tour-list others-tour-slide owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="box-tour">
+                                    <div class="box-image">
+                                        <div class="box-image-slide owl-carousel owl-theme">
+                                            <div class="item">
+                                                <img src="https://vietnamoriginal.com/photos/315/420/1/1/30599383.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="https://vietnamoriginal.com/photos/315/420/1/1/30599383.png"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <span class="tag">
+                                            <i class="fa-solid fa-sun"></i>
+                                            Client Recommend
+                                        </span>
+                                        <span class="controls">
+                                            <span class="current"></span>/<span class="total"></span>
+                                        </span>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="box-content-text">
+                                            <div class="meta">
+                                                <a href="./tours.html" class="">Incontournables</a>
+                                            </div>
+                                            <h3 class="title">
+                                                <a href="./details-tour.html">Circuit Vietnam 15
+                                                    jours</a>
+                                            </h3>
+                                            <div class="desc">
+                                                En quête&nbsp;d'un voyage Vietnam 15 jours avec une
+                                                agence
+                                                locale ? Vous
+                                                avez
+                                                tout à fait raison car&nbsp;Vietnam Original Travel
+                                                est une agence ...
+                                            </div>
+                                        </div>
 
-                            <p>Et puisque&nbsp;ce voyage est le vôtre, personnalisez le comme bon vous semble !</p>
-                        </div>
-                    </div>
-                    <div class="tours-related-list">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="tour-related-item">
-                                    <div class="box-tour">
-                                        <div class="box-image">
-                                            <a href="./details-tour.html">
-                                                <img src="https://vietnamoriginal.com/photos/315/420/1/1/30599383.png"
-                                                    alt="">
-                                                <span class="tag">
-                                                    <i class="fa-solid fa-sun"></i>
-                                                    Client Recommend
-                                                </span>
-                                                <span class="controls">
-                                                    1/10
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="box-content">
-                                            <div class="box-content-text">
-                                                <div class="meta">
-                                                    <span class="">Incontournables</span>
-                                                </div>
-                                                <h3 class="title">
-                                                    <a href="./details-tour.html">Circuit Vietnam 15 jours</a>
-                                                </h3>
-                                                <div class="desc">
-                                                    En quête&nbsp;d'un voyage Vietnam 15 jours avec une agence locale ?
-                                                    Vous
-                                                    avez
-                                                    tout à fait raison car&nbsp;Vietnam Original Travel
-                                                    est une agence ...
-                                                </div>
-                                            </div>
-                                            <div class="gr-btn">
-                                                <a href="./details-tour.html" class="btn btn-primary">
-                                                    Découvrez
-                                                    <i class="fa-solid fa-angle-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="tour-related-item">
-                                    <div class="box-tour">
-                                        <div class="box-image">
-                                            <a href="./details-tour.html">
+                            <div class="item">
+                                <div class="box-tour">
+                                    <div class="box-image">
+                                        <div class="box-image-slide owl-carousel owl-theme">
+                                            <div class="item">
                                                 <img src="https://vietnamoriginal.com/photos/315/420/1/1/30599383.png"
                                                     alt="">
-                                                <span class="tag">
-                                                    <i class="fa-solid fa-sun"></i>
-                                                    Client Recommend
-                                                </span>
-                                                <span class="controls">
-                                                    1/10
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="box-content">
-                                            <div class="box-content-text">
-                                                <div class="meta">
-                                                    <span class="">Incontournables</span>
-                                                </div>
-                                                <h3 class="title">
-                                                    <a href="./details-tour.html">Circuit Vietnam 15 jours</a>
-                                                </h3>
-                                                <div class="desc">
-                                                    En quête&nbsp;d'un voyage Vietnam 15 jours avec une agence locale ?
-                                                    Vous
-                                                    avez
-                                                    tout à fait raison car&nbsp;Vietnam Original Travel
-                                                    est une agence ...
-                                                </div>
                                             </div>
-                                            <div class="gr-btn">
-                                                <a href="./details-tour.html" class="btn btn-primary">
-                                                    Découvrez
-                                                    <i class="fa-solid fa-angle-right"></i>
-                                                </a>
+                                            <div class="item">
+                                                <img src="https://vietnamoriginal.com/photos/315/420/1/1/30599383.png"
+                                                    alt="">
                                             </div>
                                         </div>
+                                        <span class="tag">
+                                            <i class="fa-solid fa-sun"></i>
+                                            Client Recommend
+                                        </span>
+                                        <span class="controls">
+                                            <span class="current"></span>/<span class="total"></span>
+                                        </span>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="box-content-text">
+                                            <div class="meta">
+                                                <a href="./tours.html" class="">Incontournables</a>
+                                            </div>
+                                            <h3 class="title">
+                                                <a href="./details-tour.html">Circuit Vietnam 15
+                                                    jours</a>
+                                            </h3>
+                                            <div class="desc">
+                                                En quête&nbsp;d'un voyage Vietnam 15 jours avec une
+                                                agence
+                                                locale ? Vous
+                                                avez
+                                                tout à fait raison car&nbsp;Vietnam Original Travel
+                                                est une agence ...
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="tour-related-item">
-                                    <div class="box-tour">
-                                        <div class="box-image">
-                                            <a href="./details-tour.html">
+                            <div class="item">
+                                <div class="box-tour">
+                                    <div class="box-image">
+                                        <div class="box-image-slide owl-carousel owl-theme">
+                                            <div class="item">
                                                 <img src="https://vietnamoriginal.com/photos/315/420/1/1/30599383.png"
                                                     alt="">
-                                                <span class="tag">
-                                                    <i class="fa-solid fa-sun"></i>
-                                                    Client Recommend
-                                                </span>
-                                                <span class="controls">
-                                                    1/10
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="box-content">
-                                            <div class="box-content-text">
-                                                <div class="meta">
-                                                    <span class="">Incontournables</span>
-                                                </div>
-                                                <h3 class="title">
-                                                    <a href="./details-tour.html">Circuit Vietnam 15 jours</a>
-                                                </h3>
-                                                <div class="desc">
-                                                    En quête&nbsp;d'un voyage Vietnam 15 jours avec une agence locale ?
-                                                    Vous
-                                                    avez
-                                                    tout à fait raison car&nbsp;Vietnam Original Travel
-                                                    est une agence ...
-                                                </div>
                                             </div>
-                                            <div class="gr-btn">
-                                                <a href="./details-tour.html" class="btn btn-primary">
-                                                    Découvrez
-                                                    <i class="fa-solid fa-angle-right"></i>
-                                                </a>
+                                            <div class="item">
+                                                <img src="https://vietnamoriginal.com/photos/315/420/1/1/30599383.png"
+                                                    alt="">
                                             </div>
                                         </div>
+                                        <span class="tag">
+                                            <i class="fa-solid fa-sun"></i>
+                                            Client Recommend
+                                        </span>
+                                        <span class="controls">
+                                            <span class="current"></span>/<span class="total"></span>
+                                        </span>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="box-content-text">
+                                            <div class="meta">
+                                                <a href="./tours.html" class="">Incontournables</a>
+                                            </div>
+                                            <h3 class="title">
+                                                <a href="./details-tour.html">Circuit Vietnam 15
+                                                    jours</a>
+                                            </h3>
+                                            <div class="desc">
+                                                En quête&nbsp;d'un voyage Vietnam 15 jours avec une
+                                                agence
+                                                locale ? Vous
+                                                avez
+                                                tout à fait raison car&nbsp;Vietnam Original Travel
+                                                est une agence ...
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="tour-related-item">
-                                    <div class="box-tour">
-                                        <div class="box-image">
-                                            <a href="./details-tour.html">
+                            <div class="item">
+                                <div class="box-tour">
+                                    <div class="box-image">
+                                        <div class="box-image-slide owl-carousel owl-theme">
+                                            <div class="item">
                                                 <img src="https://vietnamoriginal.com/photos/315/420/1/1/30599383.png"
                                                     alt="">
-                                                <span class="tag">
-                                                    <i class="fa-solid fa-sun"></i>
-                                                    Client Recommend
-                                                </span>
-                                                <span class="controls">
-                                                    1/10
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="box-content">
-                                            <div class="box-content-text">
-                                                <div class="meta">
-                                                    <span class="">Incontournables</span>
-                                                </div>
-                                                <h3 class="title">
-                                                    <a href="./details-tour.html">Circuit Vietnam 15 jours</a>
-                                                </h3>
-                                                <div class="desc">
-                                                    En quête&nbsp;d'un voyage Vietnam 15 jours avec une agence locale ?
-                                                    Vous
-                                                    avez
-                                                    tout à fait raison car&nbsp;Vietnam Original Travel
-                                                    est une agence ...
-                                                </div>
                                             </div>
-                                            <div class="gr-btn">
-                                                <a href="./details-tour.html" class="btn btn-primary">
-                                                    Découvrez
-                                                    <i class="fa-solid fa-angle-right"></i>
-                                                </a>
+                                            <div class="item">
+                                                <img src="https://vietnamoriginal.com/photos/315/420/1/1/30599383.png"
+                                                    alt="">
                                             </div>
                                         </div>
+                                        <span class="tag">
+                                            <i class="fa-solid fa-sun"></i>
+                                            Client Recommend
+                                        </span>
+                                        <span class="controls">
+                                            <span class="current"></span>/<span class="total"></span>
+                                        </span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="tour-related-item">
-                                    <div class="box-tour">
-                                        <div class="box-image">
-                                            <a href="./details-tour.html">
-                                                <img src="https://vietnamoriginal.com/photos/315/420/1/1/30599383.png"
-                                                    alt="">
-                                                <span class="tag">
-                                                    <i class="fa-solid fa-sun"></i>
-                                                    Client Recommend
-                                                </span>
-                                                <span class="controls">
-                                                    1/10
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="box-content">
-                                            <div class="box-content-text">
-                                                <div class="meta">
-                                                    <span class="">Incontournables</span>
-                                                </div>
-                                                <h3 class="title">
-                                                    <a href="./details-tour.html">Circuit Vietnam 15 jours</a>
-                                                </h3>
-                                                <div class="desc">
-                                                    En quête&nbsp;d'un voyage Vietnam 15 jours avec une agence locale ?
-                                                    Vous
-                                                    avez
-                                                    tout à fait raison car&nbsp;Vietnam Original Travel
-                                                    est une agence ...
-                                                </div>
+                                    <div class="box-content">
+                                        <div class="box-content-text">
+                                            <div class="meta">
+                                                <a href="./tours.html" class="">Incontournables</a>
                                             </div>
-                                            <div class="gr-btn">
-                                                <a href="./details-tour.html" class="btn btn-primary">
-                                                    Découvrez
-                                                    <i class="fa-solid fa-angle-right"></i>
-                                                </a>
+                                            <h3 class="title">
+                                                <a href="./details-tour.html">Circuit Vietnam 15
+                                                    jours</a>
+                                            </h3>
+                                            <div class="desc">
+                                                En quête&nbsp;d'un voyage Vietnam 15 jours avec une
+                                                agence
+                                                locale ? Vous
+                                                avez
+                                                tout à fait raison car&nbsp;Vietnam Original Travel
+                                                est une agence ...
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="tour-related-item">
-                                    <div class="box-tour">
-                                        <div class="box-image">
-                                            <a href="./details-tour.html">
-                                                <img src="https://vietnamoriginal.com/photos/315/420/1/1/30599383.png"
-                                                    alt="">
-                                                <span class="tag">
-                                                    <i class="fa-solid fa-sun"></i>
-                                                    Client Recommend
-                                                </span>
-                                                <span class="controls">
-                                                    1/10
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="box-content">
-                                            <div class="box-content-text">
-                                                <div class="meta">
-                                                    <span class="">Incontournables</span>
-                                                </div>
-                                                <h3 class="title">
-                                                    <a href="./details-tour.html">Circuit Vietnam 15 jours</a>
-                                                </h3>
-                                                <div class="desc">
-                                                    En quête&nbsp;d'un voyage Vietnam 15 jours avec une agence locale ?
-                                                    Vous
-                                                    avez
-                                                    tout à fait raison car&nbsp;Vietnam Original Travel
-                                                    est une agence ...
-                                                </div>
-                                            </div>
-                                            <div class="gr-btn">
-                                                <a href="./details-tour.html" class="btn btn-primary">
-                                                    Découvrez
-                                                    <i class="fa-solid fa-angle-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="gr-btn text-center">
+                            <a href="" class="btn btn-primary">En savoir plus</a>
+                        </div>
                     </div>
+
                 </div>
             </section>
 
@@ -1295,7 +1815,7 @@
                                         Thaïlande et Myanmar !
                                     </div>
                                     <div class="gr-btn">
-                                        <a href="" class="btn btn-primary">
+                                        <a href="./reviews.html" class="btn btn-primary">
                                             Tous nos témoignnages <i class="fa-solid fa-angle-right"></i>
                                         </a>
                                     </div>
@@ -1359,6 +1879,8 @@
                     </div>
                 </div>
             </section>
+
+
 
         </main>
         <footer class="footer">
@@ -1515,7 +2037,7 @@
                                         Un conseiller vous rappellera gratuitement
                                     </div>
                                     <div class="gr-btn">
-                                        <a href="" class="btn btn-primary">Convernir d’un RDV</a>
+                                        <a href="./consultation.html" class="btn btn-primary">Convernir d’un RDV</a>
                                     </div>
                                 </div>
                             </div>
@@ -1642,6 +2164,30 @@
             </div>
         </footer>
         <div class="overlay-over"></div>
+    </div>
+    <div class="support-fixed">
+        <!-- Nút icon toggle -->
+        <button id="togglePopup"><i class="icon fa-solid fa-sun"></i></button>
+        <!-- Popup Box -->
+        <div class="popup-box" id="popupBox">
+            <div class="popup-header">
+                <strong>Bonjour</strong>
+            </div>
+            <div class="popup-content">
+                <p>Avez-vous une question spécifique ou des envies de voyage à partager ? N'hésitez pas à échanger avec
+                    l'un de
+                    nos experts en voyage, disponible 24/7 accompagner.</p>
+                <button class="btn-message">Écrire un message</button>
+                <div class="contact">
+                    <span class="icon"><i class="fa-solid fa-phone-volume"></i></span>
+                    <span class="text">
+                        Appelez-nous au<br>
+                        <a href="tel:+84913025122">+84 913 025 122</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class="backtotop" id="backtotop">
         <span><i class="fa-regular fa-circle-chevron-up"></i></span>

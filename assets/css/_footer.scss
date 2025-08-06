@@ -135,6 +135,17 @@
             border-radius: 50%;
             font-size: 2.4rem;
         }
+
+        @media(max-width:767.98px) {
+            gap: 10px;
+            margin: 15px 0;
+
+            a {
+                width: 30px;
+                height: 30px;
+                font-size: 1.6rem;
+            }
+        }
     }
 
     &-menulink {
@@ -159,5 +170,86 @@
         align-items: center;
         justify-content: center;
         gap: 32px;
+
+        @media(max-width:767.98px) {
+            flex-direction: column;
+            gap: 15px;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+.support-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 130;
+
+    #togglePopup {
+        font-size: 2.4rem;
+        background: #fff;
+        border: none;
+        color: var(--primary-color);
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .popup-box {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        width: 300px;
+        background-color: white;
+        color: #333;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        padding: 16px;
+        display: none;
+        z-index: 9999;
+    }
+
+    .popup-header {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .popup-content p {
+        font-size: 1.4rem;
+        margin-bottom: 16px;
+    }
+
+    .btn-message {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .icon {
+            font-size: 2.4rem;
+        }
+
+        .text {
+            text-align: left;
+        }
     }
 }
